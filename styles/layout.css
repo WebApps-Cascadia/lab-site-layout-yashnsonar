@@ -1,20 +1,36 @@
-/************************************************ 
-              PRZ Positioning CSS
-   (see PRZ_Style_Guide - Positioning document)
-*************************************************/
+body {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  min-width: 850px;
+}
 
-/* Positioning of the Header, Nav, Main, Footer */
+header {
+  flex-basis: 100%;
+  order: 1;
+}
 
+nav {
+  flex: 1;
+  order: 2;
+}
 
+main {
+  flex: 4;
+  order: 3;
+}
 
+footer {
+  flex-basis: 100%;
+  order: 4;
+}
 
+nav li {
+  display: block;
+}
 
-/* End Positioning of the Header, Nav, Main, Footer
- ********************
-/* Positioning of Client Login Nav box */
-
-
-
-
-
-/* End Positioning of Client Login Nav box */
+nav#client {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
